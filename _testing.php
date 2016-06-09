@@ -8,11 +8,11 @@ function test($function_name, $function_input, $desired_output){
     $function_output = eval($function_call);
     /* echo '<br/>['. $function_call. ']<br/>{' .$function_output. '}<br/>'; */
     $desired_output_ = ($desired_output == null)
-        ? 'null' : $desired_output;
+        ? '`null`' : $desired_output;
     $function_output_ = ($function_output == null)
-        ? 'null' : $function_output;
+        ? '`null`' : $function_output;
     $function_input_ = ($function_input == null)
-        ? 'null' : $function_input;
+        ? '`null`' : $function_input;
     // finished debug variables cleaning
     if($function_output != $desired_output) {
         echo '[X] Failed: &#9;'.$function_name.
