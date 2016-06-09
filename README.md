@@ -16,7 +16,7 @@
 Warning:  Division by zero in localhost\_testing.php on line 38
 
 [X] Failed: 	division
-| wanted:     	null
+| wanted:       null
 | obtained : 	INF
 | input:     	3,0
 
@@ -50,7 +50,7 @@ Warning:  Division by zero in localhost\_testing.php on line 38
 | input:     	3,1,3,2
 
 [X] Failed: 	wierd_math
-| wanted: 	null
+| wanted:       null
 | obtained : 	3
 | input:     	3,1,4,0
 
