@@ -2,7 +2,7 @@
 
 
 ## Output
-```
+```js
 [O] Passed: division
 | got: 3
 | input: 
