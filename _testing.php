@@ -15,20 +15,20 @@ function test($function_name, $function_input, $desired_output){
         ? 'null' : $function_input;
     // finished debug variables cleaning
     if($function_output != $desired_output) {
-            
         echo '[X] Failed: &#9;'.$function_name.
              '<br/>| wanted: &#9;'.$desired_output_.
              '<br/>| obtained : &#9;'.$function_output_.
-             '<br/>| input: '.$function_input_;
+             '<br/>| input: &#9;'.$function_input_;
     } else {
         echo '[O] Passed: &#9;'.$function_name.
              '<br/>| obtained: &#9;'.$desired_output_.
              '<br/>| input: &#9;'.$function_input_;
     }
-    echo '<br/><br/>';
+    echo '<br/><br/><br/>';
 }
 
-echo '<pre>'; // formatting the output
+echo '<style>pre, code {font-family: "Lucida Console", Consolas;font-size:13px;</style>
+    	<pre><code class="html">'; // formatting the output
 
 /*************************************************************/
 
@@ -98,5 +98,4 @@ test('wierd_math2','3,1,3,2','4.5'); /* just to be sure we did it right... */
 test('wierd_math2','3,1,4,0',null);  /* 3/1 + 4/0 = 3 + null = ...null? */
 
 
-
-echo '</pre>'; // formatting the output
+echo '</code></pre>'; // formatting the output
