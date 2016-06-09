@@ -15,7 +15,7 @@
 
 
 
-Warning:  Division by zero in X:\__Programming\WEB\!UwAmp\www\_test\ad-exchange\sql\_testing.php on line 29
+Warning:  Division by zero in localhost\_testing.php on line 29
 
 [X] Failed: division
 | want: 
