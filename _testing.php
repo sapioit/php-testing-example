@@ -27,8 +27,9 @@ function test($function_name, $function_input, $desired_output){
     echo '<br/><br/><br/>';
 }
 
-echo '<style>pre, code {font-family: "Lucida Console", Consolas;font-size:13px;</style>
-    	<pre><code class="html">'; // formatting the output
+echo '<style>pre, code {
+    font-family: "Lucida Console", Consolas;font-size:13px;
+    </style><pre><code class="html">'; // formatting the output
 
 /*************************************************************/
 
