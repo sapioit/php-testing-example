@@ -7,15 +7,24 @@ function test($function_name, $function_input, $desired_output){
     $output = array();
     $function_output = eval($function_call);
     /* echo '<br/>['. $function_call. ']<br/>{' .$function_output. '}<br/>'; */
-    if($function_output != $desired_output)
-        echo '[X] Failed: '.$function_name.
-             '<br/>| want: '.$desired_output.
-             '<br/>| got : '.$function_output.
-             '<br/>| input:<br/>'.$function_input;
-    else
-        echo '[O] Passed: '.$function_name.
-             '<br/>| got: '.$desired_output.
-             '<br/>| input: <br/>'.$function_input;
+    $desired_output_ = ($desired_output == null)
+        ? 'null' : $desired_output;
+    $function_output_ = ($function_output == null)
+        ? 'null' : $function_output;
+    $function_input_ = ($function_input == null)
+        ? 'null' : $function_input;
+    // finished debug variables cleaning
+    if($function_output != $desired_output) {
+            
+        echo '[X] Failed: &#9;'.$function_name.
+             '<br/>| wanted: &#9;'.$desired_output_.
+             '<br/>| obtained : &#9;'.$function_output_.
+             '<br/>| input: '.$function_input_;
+    } else {
+        echo '[O] Passed: &#9;'.$function_name.
+             '<br/>| obtained: &#9;'.$desired_output_.
+             '<br/>| input: &#9;'.$function_input_;
+    }
     echo '<br/><br/>';
 }
 
