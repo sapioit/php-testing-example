@@ -1,4 +1,4 @@
-# Primitive Testing Example in PHP
+# Primitive Testing Example in PHP [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 
 ## Output
